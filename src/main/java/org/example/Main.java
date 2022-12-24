@@ -34,7 +34,7 @@ public class Main {
                 .max(Comparator.comparing(Map.Entry::getValue))
                 .orElse(null);
         System.out.println("Самое частое количество повторений " + maxEntry.getKey() + " (встретилось " + maxEntry.getValue() + " раз)");
-        System.out.println("Другие параметры: ");
+        System.out.println("Другие размеры: ");
         for (Map.Entry<Integer, Integer> entry : sizeToFreq.entrySet()) {
             System.out.println("- " + entry.getKey() + " (" + entry.getValue() + " раз)");
         }
